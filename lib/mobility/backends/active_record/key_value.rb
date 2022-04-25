@@ -216,7 +216,7 @@ Implements the {Mobility::Backends::KeyValue} backend for ActiveRecord models.
         backend_class.define_has_many_association(self, attributes)
         backend_class.define_initialize_dup(self)
         backend_class.define_before_save_callback(self)
-        backend_class.define_after_destroy_callback(self)
+        # backend_class.define_after_destroy_callback(self)
       end
 
       # Returns translation for a given locale, or builds one if none is present.
